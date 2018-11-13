@@ -45,19 +45,19 @@ const program = (() => {
     if (data !== undefined) {
       const domain = 'Lén: ';
       createlist(domain, data.domain);
-      /* */
+
       let dateISO = new Date(data.registered);
       dateISO = dateISO.toISOString();
       const splitdate = dateISO.split('T');
       const registered = 'Skráð: ';
       createlist(registered, splitdate[0]);
-      /* */
+
       let changeISO = new Date(data.lastChange);
       changeISO = changeISO.toISOString();
       const splitchange = changeISO.split('T');
       const lastChange = 'Seinast breytt: ';
       createlist(lastChange, splitchange[0]);
-      /* */
+
       const registrantname = 'Skráningarapili: ';
       createlist(registrantname, data.registrantname);
       const email = 'Netfang: ';
