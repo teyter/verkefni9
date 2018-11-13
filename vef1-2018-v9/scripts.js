@@ -42,7 +42,6 @@ const program = (() => {
 
   function displayData(data) {
     removelist();
-    // const innerInput = document.querySelector('input');
     if (data !== undefined) {
       const domain = 'Lén: ';
       createlist(domain, data.domain);
